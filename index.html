@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CLCNet - Audio Samples</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div class='section'>
+        <h1>CLCNet - Audio Samples</h1>
+        <p>Audio samples accompanying the paper <i>CLCNet: Deep learning-based noise reduction for hearing aids using complex linear coding</i>.</p>
+
+        <h4>Contents:</h4>
+        <p>
+        <ul class='toc'>
+            <li><a href='#noisy'>Noisy</a></li>
+            <li><a href='#WF'>Wiener Filter</a></li>
+            <li><a href='#CLC'>Complex Linear Coding</a></li>
+        </ul>
+        </p>
+
+    </div>
+
+    <hr>
+
+    <div id='Noisy' class='section'>
+        <h2>Noisy</h2>
+
+        Sample 1 (SNR=0): <audio preload='metadata' controls><source src='samples/snr0_noisy_sample1.mp3' type='audio/mpeg'></audio>
+        Sample 2 (SNR=-5): <audio preload='metadata' controls><source src='samples/snr-5_noisy_sample1.mp3' type='audio/mpeg'></audio>
+    </div>
+
+    <div id='WF' class='section'>
+        <h2>Wiener Filter (WF)</h2>
+
+        Sample 1 (SNR=0): <audio preload='metadata' controls><source src='samples/snr0_wg_sample1.mp3' type='audio/mpeg'></audio>
+        Sample 2 (SNR=-5): <audio preload='metadata' controls><source src='samples/snr-5_wg_sample1.mp3' type='audio/mpeg'></audio>
+    </div>
+
+    <div id='CLC' class='section'>
+        <h2>Complex Linear Coding (CLC)</h2>
+
+        Sample 1 (SNR=0): <audio preload='metadata' controls><source src='samples/snr0_clc_sample1.mp3' type='audio/mpeg'></audio>
+        Sample 2 (SNR=-5): <audio preload='metadata' controls><source src='samples/snr-5_clc_sample1.mp3' type='audio/mpeg'></audio>
+    </div>
+
+    <hr>
+
+</body>
+</html>
