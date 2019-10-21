@@ -16,14 +16,21 @@
 
     <div class='section'>
         <h1>CLCNet - Audio Samples</h1>
-        <p>Audio samples accompanying the paper <i>CLCNet: Deep learning-based noise reduction for hearing aids using complex linear coding</i>.</p>
+        <p>Audio samples accompanying the paper <i>CLCNet: Deep learning-based noise reduction for hearing aids using complex linear coding</i>. All samples are from the test set. The maximum attenuation of both Wiener Filter and Complex Linear Coding is limited to 14dB.</p>
 
         <h4>Contents:</h4>
         <p>
+          German samples
         <ul class='toc'>
-            <li><a href='#noisy'>Noisy</a></li>
-            <li><a href='#WF'>Wiener Filter</a></li>
-            <li><a href='#CLC'>Complex Linear Coding</a></li>
+            <li><a href='#noisy_de'>Noisy</a></li>
+            <li><a href='#WF_de'>Wiener Filter [1]</a></li>
+            <li><a href='#CLC_de'>Complex Linear Coding [2]</a></li>
+        </ul>
+          English samples
+        <ul class='toc'>
+            <li><a href='#noisy_en'>Noisy</a></li>
+            <li><a href='#WF_en'>Wiener Filter [1]</a></li>
+            <li><a href='#CLC_en'>Complex Linear Coding [2]</a></li>
         </ul>
         </p>
 
@@ -31,28 +38,71 @@
 
     <hr>
 
-    <div id='Noisy' class='section'>
-        <h2>Noisy</h2>
+    <div id='German' class='section'>
+        <h2>German samples</h2>
+    </div>
+    <div id='noisy_de' class='section'>
+        <h3>Noisy</h3>
 
         Sample 1 (SNR=0): <audio preload='metadata' controls><source src='samples/snr0_noisy_sample1.mp3' type='audio/mpeg'></audio>
         Sample 2 (SNR=-5): <audio preload='metadata' controls><source src='samples/snr-5_noisy_sample1.mp3' type='audio/mpeg'></audio>
+        Sample 3 (SNR=10): <audio preload='metadata' controls><source src='samples/snr10_noisy_sample1.mp3' type='audio/mpeg'></audio>
     </div>
 
-    <div id='WF' class='section'>
-        <h2>Wiener Filter (WF)</h2>
+    <div id='WF_de' class='section'>
+        <h3>Wiener Filter (WF)</h3>
 
         Sample 1 (SNR=0): <audio preload='metadata' controls><source src='samples/snr0_wg_sample1.mp3' type='audio/mpeg'></audio>
         Sample 2 (SNR=-5): <audio preload='metadata' controls><source src='samples/snr-5_wg_sample1.mp3' type='audio/mpeg'></audio>
+        Sample 3 (SNR=10): <audio preload='metadata' controls><source src='samples/snr10_wg_sample1.mp3' type='audio/mpeg'></audio>
     </div>
 
-    <div id='CLC' class='section'>
-        <h2>Complex Linear Coding (CLC)</h2>
+    <div id='CLC_en' class='section'>
+        <h3>Complex Linear Coding (CLC)</h3>
 
         Sample 1 (SNR=0): <audio preload='metadata' controls><source src='samples/snr0_clc_sample1.mp3' type='audio/mpeg'></audio>
         Sample 2 (SNR=-5): <audio preload='metadata' controls><source src='samples/snr-5_clc_sample1.mp3' type='audio/mpeg'></audio>
+        Sample 3 (SNR=10): <audio preload='metadata' controls><source src='samples/snr10_clc_sample1.mp3' type='audio/mpeg'></audio>
     </div>
 
     <hr>
+
+    <div id='English' class='section'>
+        <h2>English samples</h2>
+        The English samples are also from the EUROM database. Howerver, neither english samples nor the speakers of these samples
+        were used for training. Note that the loudness of the english denoised samples was slightly improved.
+    </div>
+    <div id='noisy_en' class='section'>
+        <h3>Noisy</h3>
+
+        Sample 1 (SNR=0): <audio preload='metadata' controls><source src='samples/snr0_en_noisy_sample1.mp3' type='audio/mpeg'></audio>
+        Sample 2 (SNR=-5): <audio preload='metadata' controls><source src='samples/snr-5_en_noisy_sample1.mp3' type='audio/mpeg'></audio>
+        Sample 3 (SNR=10): <audio preload='metadata' controls><source src='samples/snr10_en_noisy_sample1.mp3' type='audio/mpeg'></audio>
+    </div>
+
+    <div id='WF_en' class='section'>
+        <h3>Wiener Filter (WF)</h3>
+
+        Sample 1 (SNR=0): <audio preload='metadata' controls><source src='samples/snr0_en_wg_sample1.mp3' type='audio/mpeg'></audio>
+        Sample 2 (SNR=-5): <audio preload='metadata' controls><source src='samples/snr-5_en_wg_sample1.mp3' type='audio/mpeg'></audio>
+        Sample 3 (SNR=10): <audio preload='metadata' controls><source src='samples/snr10_en_wg_sample1.mp3' type='audio/mpeg'></audio>
+    </div>
+
+    <div id='CLC_en' class='section'>
+        <h3>Complex Linear Coding (CLC)</h3>
+
+        Sample 1 (SNR=0): <audio preload='metadata' controls><source src='samples/snr0_en_clc_sample1.mp3' type='audio/mpeg'></audio>
+        Sample 2 (SNR=-5): <audio preload='metadata' controls><source src='samples/snr-5_en_clc_sample1.mp3' type='audio/mpeg'></audio>
+        Sample 3 (SNR=10): <audio preload='metadata' controls><source src='samples/snr10_en_clc_sample1.mp3' type='audio/mpeg'></audio>
+    </div>
+
+    <hr>
+
+
+    <div id='refs' class='section'>
+    <p>[1]: Aubreville, Marc, et al. "Deep Denoising for Hearing Aid Applications." <i>2018 16th International Workshop on Acoustic Signal Enhancement (IWAENC)</i>. IEEE, 2018.</p>
+    <p>[2]: Schroeter, Hendrik, et al. "CLCNet: Deep learning-based noise reduction for hearing aids using complex linear coding" <i>Submission for International Conference on Acoustics, Speech, and Signal Processing (ICASSP) 2020</i>.</p>
+    </div>
 
 </body>
 </html>
